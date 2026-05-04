@@ -13,45 +13,49 @@ const About = () => {
     <section id="about" className="about-section">
       <div className="container">
         <div className="about-grid">
-          <div className="about-content glass-panel">
-            <h2 className="section-title">About <span className="gradient-text">Me</span></h2>
+          <div className="about-content glass-panel animate-fade-in">
+            <p className="about-kicker">About Me</p>
+            <h2 className="about-title">
+              Building modern interfaces with a hero-style visual identity.
+            </h2>
             <p className="about-text">
-              I am a passionate software engineer dedicated to building high-performance web applications. 
-              With over 5 years of experience in the industry, I have honed my skills in creating 
-              elegant, user-centric solutions that solve complex problems.
+              I am a Software Engineering undergraduate at Sabaragamuwa University of Sri Lanka,
+              passionate about creating scalable web applications and solving real-world problems
+              through code.
             </p>
             <p className="about-text">
-              My approach blends technical expertise with a keen eye for design, ensuring that every 
-              project not only functions flawlessly but also provides an exceptional user experience.
+              My approach blends strong engineering fundamentals with a clean, polished visual
+              style, so every project feels both functional and memorable.
             </p>
             
             <div className="stats-grid">
               <div className="stat-item">
-                <h4 className="stat-number gradient-text">5+</h4>
-                <p className="stat-label">Years Experience</p>
+                <h4 className="stat-number gradient-text">3+</h4>
+                <p className="stat-label">Core Technologies</p>
               </div>
               <div className="stat-item">
-                <h4 className="stat-number gradient-text">50+</h4>
-                <p className="stat-label">Projects Completed</p>
+                <h4 className="stat-number gradient-text">10+</h4>
+                <p className="stat-label">Projects Built</p>
               </div>
               <div className="stat-item">
-                <h4 className="stat-number gradient-text">20+</h4>
-                <p className="stat-label">Happy Clients</p>
+                <h4 className="stat-number gradient-text">100%</h4>
+                <p className="stat-label">Passion for Growth</p>
               </div>
+            </div>
+
+            <div className="skills-container">
+              {skills.map((skill, index) => (
+                <div key={index} className="skill-card glass-panel">
+                  <div className="skill-icon">{skill.icon}</div>
+                  <div>
+                    <h3 className="skill-title">{skill.title}</h3>
+                    <p className="skill-desc">{skill.desc}</p>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
 
-          <div className="skills-container">
-            {skills.map((skill, index) => (
-              <div key={index} className="skill-card glass-panel">
-                <div className="skill-icon">{skill.icon}</div>
-                <div>
-                  <h3 className="skill-title">{skill.title}</h3>
-                  <p className="skill-desc">{skill.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
       </div>
     </section>

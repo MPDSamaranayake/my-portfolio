@@ -28,7 +28,7 @@ const Hero = () => {
             <a href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram">
               <FaInstagram />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/prasad-samaranayake-7b461b2ba/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
               <FaLinkedinIn />
             </a>
           </div>

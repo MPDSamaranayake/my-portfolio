@@ -46,8 +46,8 @@ const Navbar = () => {
           <a href="#contact" className={active === 'contact' ? 'active' : ''} onClick={() => setIsOpen(false)}>Contact</a>
 
           <div className="social-links">
-            <a href="https://github.com" target="_blank" rel="noreferrer"><FaGithub size={20} /></a>
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer"><FaLinkedin size={20} /></a>
+            <a href="https://github.com/MPDSamaranayake" target="_blank" rel="noreferrer"><FaGithub size={20} /></a>
+            <a href="https://www.linkedin.com/in/prasad-samaranayake-7b461b2ba/" target="_blank" rel="noreferrer"><FaLinkedin size={20} /></a>
           </div>
         </nav>
 
